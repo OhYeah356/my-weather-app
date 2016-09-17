@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "4CE24AADEE03BE65DDFA1AA9FD2BC0DE40A79B13",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "4CE24AADEE03BE65DDFA1AA9FD2BC0DE40A79B13" : 0,
+    "738B48EABE2A29F257360BB57B5B7BD2DB089E5C" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "60A3B905-8DF3-4256-A861-BCAA4B98F398",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "4CE24AADEE03BE65DDFA1AA9FD2BC0DE40A79B13" : "MyWeatherApp1\/",
+    "738B48EABE2A29F257360BB57B5B7BD2DB089E5C" : "WeatherApp\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MyWeatherApp",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MyWeatherApp.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/OhYeah356\/my-weather-app.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4CE24AADEE03BE65DDFA1AA9FD2BC0DE40A79B13"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/OhYeah356\/Weather-App-Brno-.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "738B48EABE2A29F257360BB57B5B7BD2DB089E5C"
+    }
+  ]
+}
