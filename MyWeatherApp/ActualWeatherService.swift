@@ -13,7 +13,7 @@ class ActualWeatherService {
 
 	let serviceURL = ServicesURL()
 
-    func getAcutalForecastData(completion: (result: ActualWeatherModel?, error: NSError?) -> ()) {
+	func getAcutalForecastData(completion: (result: ActualWeatherModel?, error: NSError?) -> ()) {
 
 		Alamofire.request(.GET, serviceURL.actualServiceURL())
 			.validate()
@@ -32,19 +32,22 @@ class ActualWeatherService {
 						let icon = json["weather"][0]["icon"].string,
 						let windSpeed = json["wind"]["speed"].double,
 						let temperature = json["main"]["temp"].double,
+						let minTemperature = json["main"]["temp_min"].double,
+						let maxTemperature = json["main"]["temp_max"].double,
 						let pressure = json["main"]["pressure"].int,
 						let humidity = json["main"]["humidity"].int
 					else {
+                        print("Error with JSON parsing")
 						break
 					}
-					let weather = ActualWeatherModel(cityName: cityName, description: description, icon: icon, windSpeed: windSpeed, humidity: humidity, temperature: temperature, pressure: pressure)
+                    let weather = ActualWeatherModel(cityName: cityName, description: description, icon: icon, windSpeed: windSpeed, humidity: humidity, minTemperature: minTemperature, maxTemperature: maxTemperature, temperature: temperature, pressure: pressure)
 
 					print(weather)
 					completion(result: weather, error: nil)
 
 				case .Failure(let error):
-                    completion(result: nil, error: error)
-                    print("Request failed with error:\(error)")
+					completion(result: nil, error: error)
+					print("Request failed with error:\(error)")
 				}
 		}
 	}

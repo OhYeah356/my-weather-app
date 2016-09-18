@@ -1,5 +1,5 @@
 //
-//  Extensions.swift
+//  ColorExtensions.swift
 //  MyWeatherApp
 //
 //  Created by Jan Vrzal on 17.09.16.

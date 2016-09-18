@@ -71,11 +71,10 @@ class ViewController: UIViewController {
 		super.viewDidLoad()
 		setForecastViews()
 		setView()
-		
 	}
     
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(true)
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(true)
         getAndSetData()
     }
 

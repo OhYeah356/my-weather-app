@@ -7,11 +7,11 @@
 //
 
 struct ForecastModel {
-    
-    let tomorrowTemp: Double
-    let tomorrowIcon: String
-    let dayAfterTomTemp: Double
-    let dayAfterTomIcon: String
-    let nextDayAftTomTemp:Double
-    let nextDayAftTomIcon:String
+
+	let tomorrowTemp: Double
+	let tomorrowIcon: String
+	let dayAfterTomTemp: Double
+	let dayAfterTomIcon: String
+	let nextDayAftTomTemp: Double
+	let nextDayAftTomIcon: String
 }

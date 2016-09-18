@@ -25,7 +25,6 @@ class ForecastService {
 					guard let data = response.result.value else {
 						break
 					}
-
 					let json = JSON(data)
 
 					guard
@@ -40,13 +39,11 @@ class ForecastService {
 					else {
 						break
 					}
-
 					let forecast = ForecastModel(tomorrowTemp: tomorrowTemperature, tomorrowIcon: tomorrowIcon, dayAfterTomTemp: dayAfterTomorrowTemp, dayAfterTomIcon: dayAftertomorrowIcon, nextDayAftTomTemp: nextDayAfterTomorrowTemp, nextDayAftTomIcon: nextDayAftertomorowIcon)
 					completion(result: forecast, error: nil)
 
 				case .Failure(let error):
-
-                    completion(result: nil, error: error)
+					completion(result: nil, error: error)
 					print("Request failed with error:\(error)")
 				}
 		}

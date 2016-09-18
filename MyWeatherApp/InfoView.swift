@@ -15,11 +15,13 @@ class InfoView: UIView {
 
 	let firstLabel: UILabel = {
 		let label = UILabel()
+
 		return label
 	}()
 
 	let secondLabel: UILabel = {
 		let label = UILabel()
+        label.font = UIFont.boldSystemFontOfSize(17)
 		return label
 	}()
 
@@ -33,9 +35,6 @@ class InfoView: UIView {
 	}
 
 	func setView() {
-        
-        backgroundColor = .redColor()
-        
 		addSubview(firstLabel)
 		addSubview(secondLabel)
 
@@ -46,7 +45,9 @@ class InfoView: UIView {
 		}
 
 		secondLabel.snp_makeConstraints { (make) in
-			make.center.equalTo(0)
+            make.top.equalTo(0)
+            //make.centerX.equalTo(0)
+            make.trailing.equalTo(0)
 		}
 	}
 }
